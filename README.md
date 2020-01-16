@@ -14,6 +14,8 @@ Deploy dist/angular-project using http-server ./dist/angular-project/ -p 8081
 
 Added run task to combine build and deploy in one command
 
+Pushed sample code to https://github.com/hackerspark/SimpleMicroFrameworkAngular which is not a submodule to repo https://github.com/hackerspark/Micro
+
 # AngularProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
