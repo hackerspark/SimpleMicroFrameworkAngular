@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-  title = 'angular-project';
+  @Input() param: string = "Default Param Value";
+
+  @Output() onEmit: EventEmitter<any> = new EventEmitter();
+
+  emitEvent() {
+    this.onEmit.emit(new Date());
+  }
 }
